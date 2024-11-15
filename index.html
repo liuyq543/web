@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="./css/styles.css" rel="stylesheet">
+	<meta lang="zh-cn" charset="utf8"/>
+  </head>
+  <body>
+	<div class="top">四川周黑鸭食品有限公司
+		<img src="./zhy.jpg" alt="图片丢失了" class="logo">
+	</div>
+	
+    <div class="bg">
+	  <div class="center" >
+	    <div class="title" id="title">装箱明细查询</div>
+	    <form action="#" class="form">
+		<div class="row">
+		  <span>门店编码</span>
+		  <input type="text" list="store" required name="storeId" placeholder="请填写店编，区分大小写"/>
+		  <datalist id="store">
+		  </datalist> 
+		</div>
+		<div class="row">
+		  <span>门店名称</span>
+		  <input list="mdmc" type="text" disabled="true"/>
+		  <datalist id="mdmc">
+		  </datalist>
+		</div>
+		<div class="row">
+			<span>产品箱码</span>
+			<input type="number" class="xm" placeholder="可输入箱码后几位"/>
+		  </div>
+		<div class="row">
+		  <span>物料名称</span>
+		  <input list="wlmc" type="text"/>
+		  <datalist id="wlmc">
+		  
+		  </datalist>
+		</div>
+		  <div class="row">
+			<span>到货日期</span>
+			<input type="date" id="arrive" required name="plandate"/>
+		  </div>
+		  
+		<input type="button" value="查询" id="tj"/>
+		  
+	    </form>
+	  </div>
+	  <div class="res">
+		
+	  </div>
+	  <button id="research">重新查询</button>
+	  <div id="content">
+			
+	  </div>
+	</div>
+  </body>
+  <script src="./js/scripts.js"></script>
+</html>		

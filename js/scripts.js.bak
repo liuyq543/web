@@ -1,0 +1,7 @@
+var res;
+var bt;
+var arr;
+var store={};
+document.getElementById("tj").addEventListener("click",function(e){
+    alert(document.getElementById("arrive").value);
+	});
